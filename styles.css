@@ -2,11 +2,43 @@ body {
   background-color: #f4f4f4;
   color: #222;
 }
-header,
+
+header {
+  background-color: #222;
+  color: #f9f9f9;
+  text-align: center;
+}
+
+.brand {
+  display: inline-block;
+  color: #f9f9f9;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.brand:hover {
+  color: #ffd27d;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
 footer {
   background-color: #222;
   color: #f9f9f9;
-  padding: 1rem;
   text-align: center;
 }
 
@@ -15,8 +47,13 @@ h2 {
   color: #004b8d;
 }
 
-nav a {
-  color: #f9f9f9;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
+.tagline {
+  color: #7a5630;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.price {
+  color: #b85c38;
+  font-weight: 700;
 }
