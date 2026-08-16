@@ -3,20 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Maison Sarah's Order</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="order.html">Order</a></li>
-        </ul>
-      </nav>
+      <div class="container header-bar">
+        <a class="brand" href="index.html">Maison Sarah</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
+      <div class="container">
         <p>The pre-order form is coming soon, so stay tuned!</p>
+      </div>
+      <div class="container">
+        <form action="submit" method="get">
+          <fieldset>
+            <legend>Who is picking up?</legend>
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your name" class="field"/>
+
+            <label for="email" >Email</label>
+            <input
+              id="email"
+              name="email"
+              required
+              placeholder="you@example.com"
+              class="field"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Pickup Day</legend>
+
+            <label for="sat">
+              <input
+                type="radio"
+                id="sat"
+                name="pickup-day"
+                value="Saturday"
+                checked
+                class="choice"
+              />
+              Saturday
+            </label>
+
+            <label for="sun">
+              <input type="radio" id="sun" name="pickup-day" value="Sunday" class="choice" />
+              Sunday
+            </label>
+
+            <label for="time">Pickup Time</label>
+            <select id="time" name="pickup-time" >
+              <option>10:00</option>
+              <option>12:00</option>
+              <option>14:00</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your Order</legend>
+            <div class="choice">
+
+                <label for="bread">
+                  <input type="checkbox" id="bread" name="bread" class="choice" />
+                  Bread
+                </label>
+            </div>
+            <div class="choice">
+              <label for="cake">
+                <input type="checkbox" id="cake" name="cake" class="choice" />
+                Cake
+              </label>
+            </div>
+
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" class="field"></textarea>
+
+        </fieldset>
+        <button type="submit">Submit Order</button>
+        </form>
+      </div>
     </main>
     <footer>
       <p>&copy; 2023 Maison Sarah. All rights reserved.</p>

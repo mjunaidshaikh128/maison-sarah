@@ -3,44 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Maison Sarah's Menu</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="order.html">Order</a></li>
-        </ul>
-      </nav>
+      <div class="container header-bar">
+        <a class="brand" href="index.html">Maison Sarah</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section>
-        <ul>
+      <div class="container">
+        <section>
+          <p class="tagline">
+            Freshly baked breads, pastries, and celebration cakes every day.
+          </p>
+          <ul>
           <li>
             Breads
             <ul>
-              <li>Country sourdough <span>$3.50</span></li>
-              <li>Baguette <span>$2.00</span></li>
+              <li>Country sourdough <span class="price">$3.50</span></li>
+              <li>Baguette <span class="price">$2.00</span></li>
             </ul>
           </li>
           <li>
             Pastries
             <ul>
-              <li>Butter croissant <span>$2.50</span></li>
-              <li>Almond croissant <span>$3.00</span></li>
+              <li>Butter croissant <span class="price">$2.50</span></li>
+              <li>Almond croissant <span class="price">$3.00</span></li>
             </ul>
           </li>
           <li>
             Cakes
             <ul>
-              <li>Chocolate Fudge <span>$4.00</span></li>
-              <li>Red Velvet <span>$4.50</span></li>
+              <li>Chocolate Fudge <span class="price">$4.00</span></li>
+              <li>Red Velvet <span class="price">$4.50</span></li>
             </ul>
           </li>
         </ul>
       </section>
+      <section>
+        <h2>Weekend Specials</h2>
+        <div class="card-row">
+          <div class="article-card">
+            <h3>Product 1</h3>
+            <img src="images/product1.jpg" alt="Product 1" />
+            <p class="price">$4.00</p>
+          </div>
+          <div class="article-card">
+            <h3>Product 2</h3>
+            <img src="images/product2.jpg" alt="Product 2" />
+            <p class="price">$5.00</p>
+          </div>
+          <div class="article-card">
+            <h3>Product 3</h3>
+            <img src="images/product3.jpg" alt="Product 3" />
+            <p class="price">$6.00</p>
+          </div>
+        </div>
+      </section>
+      <section>
+<table>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Hours</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Saturday</td>
+      <td>7:00 to 14:00</td>
+    </tr>
+  </tbody>
+</table>      </section>
     </main>
     <footer>
       <p>&copy; 2023 Maison Sarah. All rights reserved.</p>
